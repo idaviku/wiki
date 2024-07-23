@@ -10,5 +10,5 @@
     - Seguridad de las Operaciones
     - Protección de Activos e Infraestructura
     - Seguridad de la Información
-   - Monitoreo y Mejora Continua
+    - Monitoreo y Mejora Continua
 - Infraestructura
