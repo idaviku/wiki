@@ -1,8 +1,30 @@
+:root{
+  --color-background-dark:#1b1b1b;
+  --color-background-light:#ffffff;
+  --color-text-dark:#ffffff;
+  --color-text-light:#07070a; 
+}
+@media (prefers-color-scheme: light) {
+  :root{
+    --color-background: var(--color-background-light);
+    --color-text:var(--color-text-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root{
+    --color-background:var(--color-background-dark);
+    --color-text:var(--color-text-dark);
+  }
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
-  margin: 2em 4em 2em 4em;
+  margin: 0 auto;
+  padding: 2em clamp(1em, 10vw, 4em);
   font-size: 120%;
   line-height: 130%;
+  max-width: 920px;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,12 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
-h1 {font-size: 2em; color: #000000;}
-h2 {font-size: 1.8em; color: #404040;}
-h3 {font-size: 1.6em; color: #707070;}
-h4 {font-size: 1.4em; color: #909090;}
-h5 {font-size: 1.2em; color: #989898;}
-h6 {font-size: 1em; color: #9c9c9c;}
+h1 {font-size: 2em; }
+h2 {font-size: 1.8em; }
+h3 {font-size: 1.6em; }
+h4 {font-size: 1.4em; }
+h5 {font-size: 1.2em; }
+h6 {font-size: 1em; }
 
 p, pre, blockquote, table, ul, ol, dl {
   margin-top: 1em;
