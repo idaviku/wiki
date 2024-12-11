@@ -12,3 +12,4 @@
     - Seguridad de la Información
     - Monitoreo y Mejora Continua
 - Infraestructura
+  - [[lock_test_de_hooks]]
