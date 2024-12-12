@@ -13,3 +13,4 @@
     - Monitoreo y Mejora Continua
 - Infraestructura
   - [[lock_test_de_hooks]]
+  - [[lock_git_hooks_test]]
