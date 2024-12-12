@@ -1,0 +1,6 @@
+#!/bin/sh
+# Desencripta archivos que comienzan con 'lock'
+for file in $(git ls-files | grep 'lock.*\.enc$'); do
+  .githooks/crypt.sh decrypt "$file"
+  mv "$file" "${file%.enc}"
+done

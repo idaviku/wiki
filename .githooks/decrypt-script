@@ -1,0 +1,2 @@
+#!/bin/sh
+openssl pkeyutl -decrypt -inkey ~/.ssh/tmp-crypt -in $1 -out ${1%.enc}

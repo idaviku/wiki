@@ -1,0 +1,3 @@
+#!/bin/sh
+openssl pkeyutl -encrypt -inkey $GIT_CRYPT.pub.pem -pubin -in $1 -out $1.enc
+mv $1.enc $1

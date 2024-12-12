@@ -1,0 +1,8 @@
+#!/bin/sh
+# Encripta archivos que comienzan con 'lock'
+for file in $(git diff --cached --name-only | grep 'lock'); do
+  .githooks/crypt.sh encrypt "$file"
+  git rm "$file"
+  git add "$file.enc"
+  #rm "$file"
+done
