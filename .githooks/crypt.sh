@@ -5,7 +5,7 @@ encrypt_file() {
 
   if [[ "$file_path" == *.enc ]]; then
     echo "El archivo $file_path ya esta encriptado"
-    return
+    return 0
   fi
 
   openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in "$file_path" -out "$file_path.enc" -k $wiki_crypt_k

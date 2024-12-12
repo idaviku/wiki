@@ -15,3 +15,4 @@
   - [[lock_test_de_hooks]]
   - [[lock_git_hooks_test]]
   - [[lock_githooks_test_v3]]
+  - [[lock_ghks_test]]
